@@ -42,11 +42,13 @@
             // 
             this.SkatersGrid.AllowUserToAddRows = false;
             this.SkatersGrid.AllowUserToDeleteRows = false;
+            this.SkatersGrid.AllowUserToResizeRows = false;
             this.SkatersGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SkatersGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SkatersGrid.Location = new System.Drawing.Point(0, 0);
+            this.SkatersGrid.MultiSelect = false;
             this.SkatersGrid.Name = "SkatersGrid";
             this.SkatersGrid.ReadOnly = true;
             this.SkatersGrid.RowHeadersVisible = false;
@@ -108,6 +110,7 @@
             this.buttonProfile.TabIndex = 5;
             this.buttonProfile.Text = "Profile";
             this.buttonProfile.UseVisualStyleBackColor = true;
+            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
             // 
             // buttonClose
             // 
